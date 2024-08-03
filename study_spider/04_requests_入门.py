@@ -10,5 +10,5 @@ if __name__ == '__main__':
     """
     resp = requests.get('https://www.baidu.com/s?wd=pip怎么切换清华源')
 
-
+    print(resp.text)
     pass
