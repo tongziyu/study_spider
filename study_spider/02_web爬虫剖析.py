@@ -23,7 +23,7 @@ if __name__ == '__main__':
 
     resp = urlopen(url)
 
-    with open("周杰伦.html", mode="w") as f:
+    with open("../result/周杰伦.html", mode="w") as f:
         f.write(resp.read().decode("utf-8"))
 
     print("over!")

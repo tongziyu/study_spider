@@ -1,6 +1,6 @@
 
 def study_read():
-    file = open("../study_spider/baidu.html", mode='r', encoding="utf-8")
+    file = open("../result/baidu.html", mode='r', encoding="utf-8")
 
     # 如果传入一个数值，则表示要读的数据长度，如果没有传入参数，则表示全部读取
     print(file.read(3))
@@ -10,14 +10,14 @@ def study_read():
     print(len(content))
 
     # readline() 每调用一次读取一行，可以使用for来循环读取
-    for line in open("../study_spider/周杰伦.html", mode="r"):
+    for line in open("../result/周杰伦.html", mode="r"):
         print(line)
 
     # 关闭文件
     file.close()
 
     # 使用with open as方式，在操作完之后会自动关闭文件流，如果执行中抛出了一场也会关闭
-    with open(file="../study_spider/baidu.html", mode="r") as file:
+    with open(file="../result/baidu.html", mode="r") as file:
         print(file.readlines())
 
 
